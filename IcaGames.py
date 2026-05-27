@@ -3,7 +3,7 @@ import random
 import time
 import math
 
-# int
+# init
 pygame.init()
 pygame.mixer.init()
 
