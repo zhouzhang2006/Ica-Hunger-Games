@@ -3,11 +3,11 @@ import random
 import time
 import math
 
-# ---------------- INIT ----------------
+# int
 pygame.init()
 pygame.mixer.init()
 
-# ---------------- CONSTANTS ----------------
+# constants
 TILE_SIZE = 40
 BLACK = (0, 0, 0)
 BLUE = (0, 0, 255)
@@ -105,12 +105,12 @@ class Ghost:
 
         self.timer = 0
 
-        # Easy mode: sometimes make mistakes
+        # easy mode: sometimes make mistakes
         if self.difficulty == "easy" and random.random() < 0.35:
             self.random_move(game_map)
             return
 
-        # Medium: occasional mistakes
+        # medium mode: occasional mistakes
         if self.difficulty == "medium" and random.random() < 0.15:
             self.random_move(game_map)
             return
@@ -211,7 +211,7 @@ def generate_maze(rows, cols):
         else:
             stack.pop()
 
-    # ADD EXTRA LOOPS / PATHS
+    # add extra loops/paths to ensure the map is not a single path
     extra_openings = (rows * cols) // 18
 
     for _ in range(extra_openings):
