@@ -1,3 +1,4 @@
+# import required external functions
 import pygame
 import random
 import time
@@ -62,12 +63,13 @@ def play_menu_music():
     pygame.mixer.music.load("assets/menu.wav")
     pygame.mixer.music.set_volume(0.4)
     pygame.mixer.music.play(-1)
-
+    
 def play_game_music():
     pygame.mixer.music.load("assets/gameplay.wav")
     pygame.mixer.music.set_volume(0.4)
     pygame.mixer.music.play(-1)
 
+# death sound effect - plays upon interaction with the "ghosts"
 death_sound = pygame.mixer.Sound("assets/death.wav")
 death_sound.set_volume(0.6)
 
@@ -88,6 +90,7 @@ class Ghost:
         self.timer = 0
         self.difficulty = difficulty
 
+        # logic cotrolling how the ghost behaves in different difficulties
         if difficulty == "easy":
             self.move_delay = random.randint(14, 18)
 
@@ -251,6 +254,7 @@ def load_map(rows, cols):
                 grid[i][j] = " "
                 return grid, player
 
+# function to fill spaces in the map with food objects
 def fill_food(game_map):
     for i in range(len(game_map)):
         for j in range(len(game_map[i])):
