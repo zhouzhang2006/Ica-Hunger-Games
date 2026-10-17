@@ -1,4 +1,5 @@
-<img width="1024" height="1024" alt="icabackground" src="https://github.com/user-attachments/assets/ab5f8331-9b61-4b7e-98a9-07d3a113e3ff" />
+<img width="801" height="811" alt="Screenshot 2026-10-17 at 6 36 06 PM" src="https://github.com/user-attachments/assets/f84cce68-c9fd-4079-8d7c-b09d6753054a" />
+
 
 # Ica-Hunger-Games
 
