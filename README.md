@@ -1,3 +1,5 @@
+<img width="1024" height="1024" alt="icabackground" src="https://github.com/user-attachments/assets/ab5f8331-9b61-4b7e-98a9-07d3a113e3ff" />
+
 # Ica-Hunger-Games
 
 **Lil' Ica is hungry, help him consume all the delicious delicacies before the timer reaches zero!**
